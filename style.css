@@ -1,0 +1,34 @@
+body {
+    background-color: #cecee0;
+    display: flex;
+    justify-content: center;
+}
+
+.overzicht-klant{
+    display: flex;
+    justify-content: right;
+}
+
+.invoer-veld{
+    display: flex;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+
+section.overzicht-sheet {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.klant-lijn {
+    border: none;
+    border-top: 3px solid black;
+    margin: 20px 0;
+    width: 300px;
+}
