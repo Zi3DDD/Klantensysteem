@@ -28,7 +28,7 @@ section.overzicht-sheet {
 }
 .klant-lijn {
     border: none;
-    border-top: 3px solid black;
+    border-top: 3px solid rgb(219, 26, 26);
     margin: 20px 0;
     width: 300px;
 }
