@@ -88,6 +88,10 @@ if (isset($_POST['klant_verwijderen'])) {
                     echo "Bedrijfsnaam: " . $row['bedrijfsnaam'] . "<br>";
                     echo "Telefoonnummer: " . $row['telefoonnummer'] . "<br>";
                     echo "Email: " . $row['email'] . "<br>";
+                    echo "<form action='overzicht.php' method='POST'>";
+                    echo "<input type='hidden' name='id' value='" . $row['id'] . "'>";
+                    echo "<button type='submit' name='klant_verwijderen'>Verwijder klant</button>";
+                    echo "</form>";
                     echo "<hr class='klant-lijn'>";
                 }
             } else {
