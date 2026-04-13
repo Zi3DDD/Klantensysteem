@@ -24,6 +24,16 @@ if (isset($_POST['klant_opslaan'])) {
 
 $sql = "SELECT * FROM klantfile";
 $result = $conn->query($sql);
+
+if (isset($_POST['klant_verwijderen'])) {
+    $id= $_POST['id'];
+    $sql_delete = "DELETE FROM klantfile WHERE id='$id'";
+    if ($conn->query($sql_delete) === TRUE) {
+        $melding = "Klant verwijderd";
+    } else {
+        $melding = "Error";
+    }
+}
 ?>
 
 
